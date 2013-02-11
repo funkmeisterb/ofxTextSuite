@@ -346,7 +346,7 @@ bool ofxTextBlock::wrapTextForceLines(int linesN){
         float lineWidth = _getWidthOfWords() * (1.1f / (float)linesN);
 
         int curLines = 0;
-        bool bGotLines;
+        bool bGotLines = false;
 
         //keep increasing the line width until we get the desired number of lines.
         while (!bGotLines) {
